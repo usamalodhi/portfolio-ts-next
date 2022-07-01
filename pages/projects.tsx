@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-const Home: NextPage = () => {
+const Projects: NextPage = () => {
   return (
     <div>
       <Head>
@@ -10,14 +10,13 @@ const Home: NextPage = () => {
         <meta property='og:url' content='https://example.com' />
         <meta property='og:type' content='website' /> <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <main>
-        <h1>This is the index page</h1>
+        <h1>This is the projects page</h1>
 
-        <p>This is the index page text</p>
+        <p>This is the projects page text</p>
       </main>
     </div>
   );
 };
 
-export default Home;
+export default Projects;
