@@ -1,21 +1,16 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
+import { Box, Text } from '@chakra-ui/react';
+import { HeadComponent } from '../src/components/HeadComponent/HeadComponent';
 
 const Projects: NextPage = () => {
   return (
-    <div>
-      <Head>
-        <meta property='og:title' content='Usama Lodhi | Front End Web Developer' />
-        <meta property='og:description' content='React wizard, CSS Mysfit' />
-        <meta property='og:url' content='https://example.com' />
-        <meta property='og:type' content='website' /> <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <main>
-        <h1>This is the projects page</h1>
-
-        <p>This is the projects page text</p>
-      </main>
-    </div>
+    <>
+      <HeadComponent contentTitle='Usama Lodhi | Front End Web Developer' contentDescription='Portfolio Projects' />
+      <Box>
+        <Text as='h1'>This is the projects page</Text>
+        <Text as='p'>This is the projects page text</Text>
+      </Box>
+    </>
   );
 };
 
