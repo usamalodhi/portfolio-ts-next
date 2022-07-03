@@ -10,15 +10,11 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <Flex h='100vh' direction='column'>
-      <Box as='header'>
-        <Header />
-      </Box>
+      <Header />
       <Box as='main' flex='1'>
         {children}
       </Box>
-      <Box as='footer'>
-        <Footer />
-      </Box>
+      <Footer />
     </Flex>
   );
 };
