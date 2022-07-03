@@ -13,6 +13,7 @@ const theme = extendTheme({
       h1: { padding: '16px 24px', fontSize: '3rem', fontWeight: '900', maxWidth: '70ch', lineHeight: '1.6' },
       h2: { padding: '16px 24px', fontSize: '2rem', fontWeight: '800', maxWidth: '70ch', lineHeight: '1.6' },
       p: { padding: '16px 24px', fontSize: '1rem', fontWeight: '600', maxWidth: '70ch', lineHeight: '1.6' },
+      ul: { listStyleType: 'none', gap: '24px' },
     },
     '.chakra-box': {
       // borderColor: 'red !important',
@@ -25,16 +26,34 @@ const theme = extendTheme({
   colors: {
     brand: {
       primary: '#000000',
-      secondary: '#FFFFFF',
+      secondary: '#FFFAFA',
     },
   },
 
-  layerStyles: {},
+  layerStyles: {
+    header_footer: {
+      backgroundColor: 'brand.primary',
+      color: 'brand.secondary',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+    Hero: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100%',
+      paddingBottom: '24px',
+      textAlign: 'center',
+    },
+  },
   textStyles: {},
   breakpoints: {
     sm: '480px',
     md: '768px',
     lg: '1024px',
+    xl: '1200px',
+    '2xl': '1536px',
   },
 });
 
