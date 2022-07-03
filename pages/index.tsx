@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { HeadComponent } from '../src/components/HeadComponent/HeadComponent';
-import { Box, Text } from '@chakra-ui/react';
+import { Hero } from '../src/components/Hero/Hero';
 const Home: NextPage = () => {
   return (
     <>
@@ -8,10 +8,7 @@ const Home: NextPage = () => {
         contentTitle='Usama Lodhi | Front End Web Developer'
         contentDescription='React wizard, CSS Mysfit'
       />
-      <Box>
-        <Text as='h1'>This is the index page</Text>
-        <Text as='p'>This is the index page text</Text>
-      </Box>
+      <Hero />
     </>
   );
 };
