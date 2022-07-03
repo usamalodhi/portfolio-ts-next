@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { HeadProps } from '../../ts/interfaces/HeadProps';
+import { HeadProps } from './HeadInterface';
 
 export const HeadComponent = ({ contentTitle, contentDescription }: HeadProps) => {
   return (
