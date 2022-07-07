@@ -12,7 +12,8 @@ const theme = extendTheme({
 
       h1: { padding: '16px 24px', fontSize: '3rem', fontWeight: '900', maxWidth: '70ch', lineHeight: '1.6' },
       h2: { padding: '16px 24px', fontSize: '2rem', fontWeight: '800', maxWidth: '70ch', lineHeight: '1.6' },
-      p: { padding: '16px 24px', fontSize: '1rem', fontWeight: '600', maxWidth: '70ch', lineHeight: '1.6' },
+      h3: { padding: '16px 24px', fontSize: '1rem', fontWeight: '600', maxWidth: '70ch', lineHeight: '1.6' },
+      p: { padding: '16px 24px', fontSize: '1rem', maxWidth: '70ch', lineHeight: '1.6' },
       ul: { listStyleType: 'none', gap: '24px' },
     },
     '.chakra-box': {
@@ -46,8 +47,29 @@ const theme = extendTheme({
       paddingBottom: '24px',
       textAlign: 'center',
     },
+    ProjectLinks: {
+      display: 'inline-flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center',
+      fontWeight: '600',
+      backgroundColor: '#edf2f7',
+      width: '78px',
+      height: '50px',
+    },
+    ProjectImage: {
+      fit: 'cover',
+      align: 'center',
+      width: '100%',
+      height: `{{ base: '100%', sm: '400px', lg: '500px' }}`,
+    },
   },
-  textStyles: {},
+  textStyles: {
+    ProjectLinks: {
+      textAlign: 'center',
+      fontWeight: '600',
+    },
+  },
   breakpoints: {
     sm: '480px',
     md: '768px',
