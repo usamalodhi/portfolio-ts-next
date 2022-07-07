@@ -1,6 +1,5 @@
-import { Flex, Box, ListItem, Text } from '@chakra-ui/react';
-import Link from 'next/link';
-import { HeaderLogoProps, HeaderNavProps } from './HeaderInterface';
+import { Flex, Box, Text } from '@chakra-ui/react';
+import { HeaderLogoProps } from './HeaderInterface';
 import { NavBar } from './NavBar';
 
 const Logo = ({ logo }: HeaderLogoProps) => {
