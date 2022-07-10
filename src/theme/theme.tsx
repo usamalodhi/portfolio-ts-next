@@ -10,11 +10,12 @@ const theme = extendTheme({
         backgroundColor: '#FFFAFA',
       },
 
-      h1: { padding: '16px 24px', fontSize: '3rem', fontWeight: '900', maxWidth: '70ch', lineHeight: '1.6' },
-      h2: { padding: '16px 24px', fontSize: '2rem', fontWeight: '800', maxWidth: '70ch', lineHeight: '1.6' },
-      h3: { padding: '16px 24px', fontSize: '1rem', fontWeight: '600', maxWidth: '70ch', lineHeight: '1.6' },
-      p: { padding: '16px 24px', fontSize: '1rem', maxWidth: '70ch', lineHeight: '1.6' },
+      h1: { fontSize: '3rem', fontWeight: '900', maxWidth: '70ch', lineHeight: '1.6' },
+      h2: { fontSize: '2rem', fontWeight: '800', maxWidth: '70ch', lineHeight: '1.6' },
+      h3: { fontSize: '1rem', fontWeight: '600', maxWidth: '70ch', lineHeight: '1.6' },
+      p: { fontSize: '1rem', maxWidth: '70ch', lineHeight: '1.6' },
       ul: { listStyleType: 'none', gap: '24px' },
+      a: { textDecoration: 'none !important' },
     },
     '.chakra-box': {
       // borderColor: 'red !important',
@@ -37,6 +38,7 @@ const theme = extendTheme({
       color: 'brand.secondary',
       justifyContent: 'space-between',
       alignItems: 'center',
+      padding: '16px 24px',
     },
     Hero: {
       display: 'flex',
