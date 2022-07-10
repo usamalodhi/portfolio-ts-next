@@ -1,4 +1,4 @@
-type TagData = 'JavaScript' | 'TypeScript' | 'Node' | 'Express';
+type TagData = string;
 type ExternalLinkLive = string;
 type ExternalLinkCode = string;
 
