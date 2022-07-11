@@ -3,6 +3,7 @@ type ExternalLinkLive = string;
 type ExternalLinkCode = string;
 
 export interface ProjectDataProps {
+  projectTitle: string;
   projectImage: HTMLImageElement;
   projectImageAlt: string;
   projectDescription: string;
