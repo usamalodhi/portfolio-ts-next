@@ -1,10 +1,16 @@
 import { List, ListItem, Box } from '@chakra-ui/react';
 import Link from 'next/link';
 import { HeaderNavProps } from './HeaderInterface';
+const { motion } = require('framer-motion');
 
 export const NavLink = ({ linkTo, name }: HeaderNavProps) => {
   return (
-    <ListItem textAlign='center'>
+    <ListItem
+      as={motion.li}
+      whileHover={{ y: -5.0, color: '#FFFFFF', scale: 1.2 }}
+      transition='0.1s linear'
+      textAlign='center'
+    >
       <Link href={linkTo}>{name}</Link>
     </ListItem>
   );

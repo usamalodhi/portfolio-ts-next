@@ -1,11 +1,20 @@
-import { Flex, Box, Text } from '@chakra-ui/react';
+import { Flex, Box } from '@chakra-ui/react';
+import Link from 'next/link';
 import { HeaderLogoProps } from './HeaderInterface';
+const { motion } = require('framer-motion');
+
 import { NavBar } from './NavBar';
 
 const Logo = ({ logo }: HeaderLogoProps) => {
   return (
-    <Box>
-      <Text fontWeight='bold'>{logo}</Text>
+    <Box
+      as={motion.div}
+      fontSize='2rem'
+      fontWeight='bold'
+      whileHover={{ y: -5.0, color: '#FFFFFF', scale: 1.1 }}
+      transition='0.1s linear'
+    >
+      <Link href='/'>{logo}</Link>
     </Box>
   );
 };
