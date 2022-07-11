@@ -8,6 +8,7 @@ const theme = extendTheme({
         fontFamily: 'poppins, sans-serif',
         color: '#000000',
         backgroundColor: '#FFFAFA',
+        background: 'linear-gradient(to right, #FFFFFF, #FFEFBA)',
       },
 
       h1: { fontSize: '3rem', fontWeight: '900', maxWidth: '70ch', lineHeight: '1.6' },
@@ -38,7 +39,7 @@ const theme = extendTheme({
       color: 'brand.secondary',
       justifyContent: 'space-between',
       alignItems: 'center',
-      padding: '16px 24px',
+      padding: '1em 1.5em',
     },
     Hero: {
       display: 'flex',
@@ -46,18 +47,27 @@ const theme = extendTheme({
       alignItems: 'center',
       justifyContent: 'center',
       height: '100%',
-      paddingBottom: '24px',
+      paddingTop: '1em',
+      paddingBottom: '1em',
       textAlign: 'center',
     },
-    ProjectLinks: {
-      display: 'inline-flex',
-      justifyContent: 'center',
+
+    ButtonStyle: {
+      display: 'block',
+      padding: '10px 16px 9px',
+      width: '100px',
+      border: '1px solid black',
+      borderRadius: '2px',
+      outline: 'none',
+    },
+    ButtonContactStyle: {
+      display: 'flex',
+      justifyContent: 'flex-start',
       alignItems: 'center',
-      textAlign: 'center',
-      fontWeight: '600',
-      backgroundColor: '#edf2f7',
-      width: '78px',
-      height: '50px',
+      border: '0.2em solid black',
+      gap: '1em',
+      padding: '10px 16px 9px',
+      backgroundColor: '#FFFFFF',
     },
     ProjectImage: {
       fit: 'cover',
@@ -67,9 +77,11 @@ const theme = extendTheme({
     },
   },
   textStyles: {
-    ProjectLinks: {
-      textAlign: 'center',
+    ButtonStyle: {
+      textTransform: 'uppercase',
       fontWeight: '600',
+      transform: 'translateZ(0)',
+      background: 'brand.primary',
     },
   },
   breakpoints: {
