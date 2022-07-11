@@ -1,5 +1,7 @@
 export interface FooterProps {
-  text: string;
+  copyright: string;
+  email: string;
+  tel: string;
 }
 export interface SocialProps {
   name: string;
