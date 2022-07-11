@@ -1,5 +1,7 @@
 import { SimpleGrid, Image, Flex, Text, Stack, Box, Divider, Button, Link } from '@chakra-ui/react';
-import test from '../../../public/assets/AboutImage.jpeg';
+import AboutImg from '../../../public/assets/AboutImage.jpeg';
+import Contact from '../Contact/Contact';
+const { motion } = require('framer-motion');
 
 interface FeatureProps {
   service: JSX.Element;
@@ -46,11 +48,33 @@ export function AboutMe() {
             <Text as='h1'>About Me</Text>
           </Box>
           <Flex gap='24px'>
-            <Link textDecoration='none' href='/files/BooleanCertificate.pdf' target='_blank' rel='noopener noreferrer'>
-              <Button>View CV</Button>
+            <Link
+              as={motion.a}
+              whileHover={{ color: '#000000', backgroundColor: '#FFFAFA' }}
+              transition='0.05s linear'
+              href='/files/BooleanCertificate.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              width='max-content'
+              textStyle='ButtonStyle'
+              layerStyle='ButtonStyle'
+              color='brand.secondary'
+            >
+              View CV
             </Link>
-            <Link href='/files/BooleanCertificate.pdf' target='_blank' rel='noopener noreferrer'>
-              <Button>View Certificate</Button>
+            <Link
+              as={motion.a}
+              whileHover={{ color: '#000000', backgroundColor: '#FFFAFA' }}
+              transition='0.05s linear'
+              href='/files/BooleanCertificate.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              width='max-content'
+              textStyle='ButtonStyle'
+              layerStyle='ButtonStyle'
+              color='brand.secondary'
+            >
+              View Certificate
             </Link>
           </Flex>
         </Flex>
@@ -101,9 +125,11 @@ export function AboutMe() {
             }
           />
         </Stack>
+
+        <Contact />
       </Stack>
       <Flex>
-        <Image rounded='md' alt='feature image' src={test.src} objectFit='cover' />
+        <Image rounded='md' alt='feature image' src={AboutImg.src} objectFit='cover' />
       </Flex>
     </SimpleGrid>
   );
