@@ -128,7 +128,7 @@ const ProjectData = ({
 
 export function Project() {
   return (
-    <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={{ base: 8, md: 10 }} py={{ base: 18, md: 24 }}>
+    <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={{ base: 8, md: 10 }} py='16px'>
       <ProjectData
         projectTitle='4 Thurlestone'
         /* @ts-ignore */
