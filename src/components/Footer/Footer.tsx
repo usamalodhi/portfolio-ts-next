@@ -36,7 +36,7 @@ export function Footer() {
       <FooterText copyright='© 2022 Usama Lodhi' email='Email: lodhius@gmail.com' tel='Tel: 07455964444' />
       <List display='flex' listStyleType='none' paddingRight={{ base: '0px', lg: '24px' }}>
         <SocialLinks image={Github} name='Github' linkTo='https://github.com/usamalodhi/' />
-        <SocialLinks image={LinkedIn} name='LinkedIn' linkTo='https://www.linkedin.com/in/usama-lodhi//' />
+        <SocialLinks image={LinkedIn} name='LinkedIn' linkTo='https://linkedin.com/in/usama-lodhi' />
       </List>
     </Flex>
   );

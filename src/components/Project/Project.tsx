@@ -139,8 +139,8 @@ export function Project() {
         industry capitalise on. I built him a website on the JAMstack using Gatsby GraphQL and the Contentful CMS to allow for easy editing of
         data through updating Contentful Models.'
         tags={['Gatsby', 'Chakra UI', 'Framer Motion', 'CMS']}
-        liveURL='https://chakra-ui.com'
-        codeURL='https://chakra-ui.com'
+        liveURL='https://fourthurlestonecafe.netlify.app/'
+        codeURL='https://github.com/usamalodhi/4Thurlestone-Restaurant-Contentful-CMS'
       />
       <ProjectData
         projectTitle='Career Changer Portfolio'
@@ -149,8 +149,8 @@ export function Project() {
         projectImageAlt='Career Changer Portfolio'
         projectDescription='One of the first obstacles an aspiring web developer faces is building a portfolio site, which can distract them from working on their projects. My portfolio website is built using Next JS, Typescript and Chakra UI which come together to make a portfolio highly customisable and easy for someone to clone and use as is or modify for their needs. I have created a template based of my portfolio specificially for a career changer or graduate to get things going'
         tags={['Next JS', 'TypeScript', 'Chakra UI', 'Framer Motion']}
-        liveURL='https://chakra-ui.com'
-        codeURL='https://chakra-ui.com'
+        liveURL='https://career-changer-portfolio.vercel.app/'
+        codeURL='https://github.com/usamalodhi/career-changer-portfolio'
       />
     </SimpleGrid>
   );
