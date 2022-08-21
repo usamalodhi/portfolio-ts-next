@@ -52,7 +52,7 @@ export function AboutMe() {
               as={motion.a}
               whileHover={{ color: '#000000', backgroundColor: '#FFFAFA' }}
               transition='0.05s linear'
-              href='/files/usamalodhi_cv_20220711.pdf'
+              href='/files/usamalodhi_cv_20220816.pdf'
               target='_blank'
               rel='noopener noreferrer'
               width='max-content'
